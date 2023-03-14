@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Reviews</title>
+    <meta charset="utf-8">
+    {{!-- <link rel="stylesheet" href="static/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> --}}
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  background-color: rgb(137, 139, 141);
+  margin-left:15px;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+
+<body style="background:black">
+<a href="/review" style="align:center">POST EXPERIENCE</a>
+<table style="color:black">
+  <tr>
+    <th>Name</th>
+    <th>Experience</th>
+    <th>Rating</th>
+  </tr>
+  
+{{#each details}}
+    <tr>
+    <td>{{this.name }}</td>
+    <td>{{this.experience}}</td>
+    <td>{{this.rating}}</td>
+  </tr>      
+{{/each}}  
+</table>
+
+
+</body>
+</html>
