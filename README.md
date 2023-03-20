@@ -4,7 +4,7 @@ A front-end tourist website where users can get the information of famous places
 
 Step 1 : Download nodejs and mongodb and set the path.
 
-Step 2 : Open folder and Initaite npm 
+Step 2 : Open folder and Initiate npm 
 
 Step 3 : Download required dependencies
 
